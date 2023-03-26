@@ -34,28 +34,31 @@
       <div class="navbar-top">
         <div class="left">
           <div class="logo">
-            <img src="images/FullLogo_Transparent_NoBuffer__8_-removebg-preview.png" width="212px">
+            <img src="images/FullLogo_Transparent_NoBuffer__8_-removebg-preview.png" width="196px">
           </div>
         </div>
         <div class="right">
-          <li>
-            <button class="dropbtn1" onclick="myFunction1()">Create Account</button>
-         </li>
-              <div class="sign-in-dropdown">
-                <button class="dropbtn2" onclick="myFunction2()">Sign-In &#x21e9;
-                </button>
-                <div class="dropdown-content" id="myDropdown2">
-                  <h3>SIGN IN</h3>
-                  <div class="sign-in-email">
-                    <input type="text" placeholder="Email">
-                  </div>
-                  <div class="sign-in-password">
-                    <input type="text" placeholder="Password">
-                  </div>
-                  <li><a href="sign-in">Sign In</a></li>
-                  <li><a href="sign-in-wf">Sign In with Facebook</a></li>
+          <div class="accounts">
+            <li>
+              <button class="dropbtn1" onclick="myFunction1()">Create Account</button>
+           </li>
+           <hr width="1" size="20"/>
+           <div class="sign-in-dropdown">
+            <button class="dropbtn2" onclick="myFunction2()">Sign-In<i class="fa-solid fa-circle-arrow-down"></i></button>
+              <div class="dropdown-content" id="myDropdown2">
+                <h3>SIGN IN</h3>
+                <div class="sign-in-email">
+                  <input type="text" placeholder="Email">
                 </div>
-              </div>  
+                <div class="sign-in-password">
+                  <input type="text" placeholder="Password">
+                </div>
+                <li><a href="sign-in">Sign In</a></li>
+                <li><a href="sign-in-wf">Sign In with Facebook</a></li>
+              </div>
+            </div> 
+   
+          </div>
           <div class="search-bar">
             <input type="text" placeholder="Search">
             <div class="search-button">
@@ -66,11 +69,11 @@
       </div>
       <nav>
         <ul>
-            <li><a href="#psychics">PSYCHICS &#x21e9;</a>
+            <li><a href="#psychics">PSYCHICS<i class="fa-solid fa-arrow-turn-down"></i></a>
                 <div class="psychics-dropdown" id="psychics-drop">
                   <ul>
                     <li><a href="all psychics">All Psychics</a></li>
-                    <li class="sub-menu"><a href="reading topics">Reading Topics</a>
+                    <li class="sub-menu"><a href="reading topics">Reading Topics<i class="fa-solid fa-arrow-right-long"></i></a>
                         <div class="readingtopics">
                            <ul>
                                 <li><a href="#">Topic1</a></li>
@@ -82,7 +85,7 @@
                     <li><a href="psychic abilities">Psychic Abilities</a></li>
                 </div>
             </li>
-            <li><a href="#horoscopes">HOROSCOPES     &#x21e9;</a>
+            <li><a href="#horoscopes">HOROSCOPES<i class="fa-solid fa-arrow-turn-down"></i></a>
               <div class="horoscopes-dropdown" id="horoscopes-drop">
                 <ul>
                   <li><a href="all horoscopes">All Horoscopes</a></li>
@@ -91,7 +94,7 @@
                 </ul>  
               </div>
             </li>
-            <li><a href="#blog">BLOG &#x21e9;</a>
+            <li><a href="#blog">BLOG<i class="fa-solid fa-arrow-turn-down"></i></a>
               <div class="blog-dropdown" id="blog-drop">
                 <ul>
                   <li><a href="zodiac sign compatibility">Zodiac Sign Compatibility</a></li>
@@ -102,7 +105,7 @@
             </li>
             <li><a href="#pricing">PRICING</a></li>
             <li><a href="#how it works">HOW IT WORKS</a></li>
-            <li><a href="#about">ABOUT &#x21e9;</a>
+            <li><a href="#about">ABOUT<i class="fa-solid fa-arrow-turn-down"></i></a>
               <div class="about-dropdown" id="about-drop">
                 <ul>
                   <li><a href="about michigan psychics network">About MPN</a></li>
@@ -153,7 +156,10 @@
                 <h3>NitaHealing</h3>
                 <h4>4.9<i class="fa-solid fa-star"></i>(6889)</h4>
               </div>
-              <h4>$1.00</h4>
+              <div class="card-text-price">
+                <h4>$1.00</h4>
+                <h4>$5.00</h4>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="psychic-card">
@@ -163,9 +169,12 @@
             <button class="connect">CONNECT</button>
               <div class="card-text">
                 <h3>Cosmo</h3>
-                <h4>4.9<i class="fa-solid fa-star"></i>(6889)</h4>
+                <h4>4.7<i class="fa-solid fa-star"></i>(2490)</h4>
               </div>
-              <h4>$1.00</h4>
+              <div class="card-text-price">
+                <h4>$1.00</h4>
+                <h4>$5.00</h4>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="psychic-card">
@@ -175,9 +184,12 @@
             <button class="connect">CONNECT</button>
               <div class="card-text">
                 <h3>Sue Bird</h3>
-                <h4>4.9<i class="fa-solid fa-star"></i>(6889)</h4>
+                <h4>4.5<i class="fa-solid fa-star"></i>(10134)</h4>
               </div>
-              <h4>$1.00</h4>
+              <div class="card-text-price">
+                <h4>$1.00</h4>
+                <h4>$5.00</h4>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="psychic-card">
@@ -187,9 +199,12 @@
             <button class="connect">CONNECT</button>
               <div class="card-text">
                 <h3>Max</h3>
-                <h4>4.8<i class="fa-solid fa-star"></i>(6889)</h4>
+                <h4>4.4<i class="fa-solid fa-star"></i>(1135)</h4>
               </div>
-              <h4>$1.00</h4>
+              <div class="card-text-price">
+                <h4>$1.00</h4>
+                <h4>$4.00</h4>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="psychic-card">
@@ -199,9 +214,12 @@
             <button class="connect">CONNECT</button>
               <div class="card-text">
                 <h3>Dream</h3>
-                <h4>4.9<i class="fa-solid fa-star"></i>(6889)</h4>
+                <h4>4.3<i class="fa-solid fa-star"></i>(1823)</h4>
               </div>
-              <h4>$1.00</h4>
+              <div class="card-text-price">
+                <h4>$1.00</h4>
+                <h4>$4.00</h4>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="psychic-card">
@@ -211,9 +229,12 @@
             <button class="connect">CONNECT</button>
               <div class="card-text">
                 <h3>Vision</h3>
-                <h4>5.0<i class="fa-solid fa-star"></i>(6889)</h4>
+                <h4>5.0<i class="fa-solid fa-star"></i>(1103)</h4>
               </div>
-              <h4>$1.00</h4>
+              <div class="card-text-price">
+                <h4>$1.00</h4>
+                <h4>$5.00</h4>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
@@ -363,39 +384,49 @@
           <ul>
             <div>
               <li class="perk">
-                <i class="fa-regular fa-dollar-sign"></i> 
-                <h3>Over 25 Years in Business</h3>
+                <i class="fa-solid fa-scale-balanced"></i>
+                <div class ="perk-text">
+                  <h3>Balance and harmony</h3>
+                  <p>With expertise in selecting the most gifted psychics.</p>
+                </div>
               </li>
             </div>
             <div>
               <li class="perk">
-                <i class="fa-solid fa-hand-holding-dollar"></i> 
-                <h3>24/7 Customer Service</h3>
+                <i class="fa-solid fa-headset"></i>
+                <div class ="perk-text">
+                  <h3>24/7 Customer Service</h3>
+                  <p>Our agents are here for you, anytime.</p>
+                </div>
               </li>
             </div>
             <div>
               <li class="perk">
-                <i class="fa-brands fa-phoenix-framework"></i>
-                <h3>Karma Rewards</h3>
+                <i class="fa-solid fa-crown"></i>
+                <div class ="perk-text">
+                  <h3>Karma Rewards</h3>
+                  <p>Earn points towards free readings, exclusive offers and perks!</p>
+                </div>
               </li>  
             </div>
             <div >
               <li class="perk">
-                <i class="fa-regular fa-calendar-check"></i>
-                <h3>Satisfaction Guarantee</h3>
+                <i class="fa-regular fa-circle-check"></i>
+                <div class ="perk-text">
+                  <h3>Satisfaction Guarantee</h3>
+                  <p>If it’s not the best reading you’ve ever had, it’s free!</p>
+                </div>
               </li>  
             </div>
           </ul>
         </div>
       </div>
       <div class="ban-8-container2">
-        <div class="topics">
-          <ul>
-            <div><li class="topics-glass"><img src="images/topics3.png">Medium</li></div>
-            <div><li class="topics-glass"><img src="images/topics1.png">Love</li></div>
-            <div><li class="topics-glass"><img src="images/topics2.png">Tarot</li></div>
-          </ul>
-        </div>
+        <ul>
+          <div><iframe width="504" height="284"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe></div>
+        </ul>
       </div>
     </div> 
     <div class="ban-9">
@@ -436,25 +467,23 @@
       </div> 
     </div><div class="ban-10">
       <div class="ban-10-container2">
-        <div class="topics">
+     
           <ul>
-            <div><li class="topics-glass"><img src="images/topics3.png">Medium</li></div>
-            <div><li class="topics-glass"><img src="images/topics1.png">Love</li></div>
-            <div><li class="topics-glass"><img src="images/topics2.png">Tarot</li></div>
+            <div><iframe width="504" height="284"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY">
+              </iframe></div>
           </ul>
-        </div>
+      
       </div>
       <div class="ban-10-container">
-        <h2>See how a Psychic reading <br> change your life.</h2>
+        <h2>See how a Psychic reading <br>can change your life.</h2>
         <p>Whether you want to unlock a mystery, clear a path, or boost your inner power, our psychics are here to help you in matters of love, relationships, money, career and all the things that matter to you.</p>
         <div class="content-10">
-          <div class="join-now">
-            <button class="join-now-btn">How It Works</button>
+          <div class="how-it-works">
+            <button class="how-it-works-btn">How It Works</button>
           </div>
         </div>
       </div>
-      
-      
     </div> 
     <div class="ban-11-container">
       <h2>Explore other Topics, Tools, Abilities and Style</h2>
@@ -501,12 +530,28 @@
         <h2>Frequently Asked Questions</h2>
         <span>Expand All</span>
         <div class="faq-all">
-          <div class="faq">
-            <h3>How will charges appear on my card’s statement?</h3>
+          <div class="faq" onclick="myFunction3()">
+            <header>
+              <h3>How will charges appear on my card’s statement?</h3>
+              <i class="fa-solid fa-plus"></i>
+            </header>
+            <hr>
+            <div class="expand" id="myDropdown3">
+              <p class="description">To safeguard your privacy, charges will always appear on your credit card statement as “TELCASH.”</p>
+              <i class="fa-solid fa-minus"></i>
+            </div>
           </div>
-          <div class="faq">
+          
+          <!-- <div class="sign-in-dropdown">
+            <button class="dropbtn2" onclick="myFunction2()">Sign-In &#x21e9;</button>
+              <div class="dropdown-content" id="myDropdown2">
+                <h3>SIGN IN</h3> -->
+          <div class="faq" id="myDropdown3" onclick="myFunction3()">
             <h3>How does it work?</h3>
+            <i class="fa-solid fa-plus"></i>
           </div>
+          <hr>
+          <p>To safeguard your privacy, charges will always appear on your credit card statement as “TELCASH.”</p>
           <div class="faq">
             <h3>Can a phone reading be as effective as an in-person reading?</h3>
           </div>
@@ -521,37 +566,123 @@
          <div class="content-7">
           <div class="faq-glasses">
             <ul>
-              <li class="faq-glass"><h2>Best Online Psychcs</h2>
+              <div class="faq-glass">
+                <i class="fa-regular fa-eye"></i>
+                <h2>Best Online Psychcs</h2>
                 <p>We select only the most gifted psychics</p>
-                <div class="learn-more">
-                  <button class="new-customer-rate-btn">New Customer Rate<h2>$20</h2></button>
-                </div>
-              </li>
-              <div class="faq-glass"><h2>Unmatched Availability</h2>
-                <p>Best for those getting started.</p>
-                <ul>
-                  <li>Our Most Popular Psychics</li>
-                  <li>Access to 299 Psychics</li>
-                  <li>5 - 15 Years Psychic Experience</li>
-                  <li>4.2 Average Star Rating</li>
-                  <li>700+ Positive Testimonials</li>  
-                </ul>
+                <li class="learn-more">Learn More</li>
               </div>
-              <div class="faq-glass"><h2>Real Psychic Reviews</h2>
-                <p>For those with big questions.</p>
-                <ul>
-                  <li>Premier Psychics</li>
-                  <li>Access to 368 Psychics</li>
-                  <li>10+ Years Psychic Experiencee</li>
-                  <li>4.6 Average Star Ratingg</li>
-                  <li>1,200+ Positive Testimonial</li>  
-                </ul>
+              <div class="faq-glass">
+                <i class="fa-solid fa-phone"></i>
+                <h2>Unmatched Availability</h2>
+                <p>Our psychics are available for you 24/7</p>
+                <li class="learn-more">Learn More</li>
+              </div>
+              <div class="faq-glass">
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <h2>Client Reviews</h2>
+                <p>Find out how others have benefited from a reading</p>
+                <li class="learn-more">Learn More</li>
               </div>
             </ul>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="images/FullLogo_Transparent_NoBuffer__8_-removebg-preview.png" width="164px">
+          </div>
+          <div class="links">
+            <div class="column-3">
+              <h4>About</h4>
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+              </ul>
+            </div>
+            <div class="column-2">
+              <h4>Psychics</h4>
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+              </ul>
+            </div>
+            <div class="column-2">
+              <h4>Features</h4>
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+              </ul>
+            </div>
+            <div class="column-2">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="soc-app">
+            <ul>
+              <li class="social-media">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </li>
+              <li>
+                <hr>
+              </li>
+              <li class="app-store">
+                <h5>Get The Michigan Psychics Network Mobile App</h5>
+                <div class="apps">
+                  <a href="#">
+                    <img src="images/download-on-the-app-store.png" alt="Download on the App Store" width="136px">
+                  </a>
+                  <a href="#">
+                    <img src="images/google-play-badge.png" alt="Get it on Google Play" width="136px">
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+    </footer>
+    <div class="footer">
+      <div class="footer-content">
+        <p>©2022-2023 Michigan Psychics Network, Inc. All Rights Reserved. For entertainment purposes only. Must be 18 years or older.</p> 
+        
+      </div>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <hr width="1" size="16"/>
+        <li><a href="#">Terms of Use</a></li>
+        <hr width="1" size="16"/>
+        <li><a href="#">Site Map</a></li>
+        <hr width="1" size="16"/>
+        <li><a href="#">Do Not Sell My Personal Information</a></li>
+      </ul>
+    </div>
+     
   </div>
   <script>
   /* When the user clicks on the button, 
@@ -560,6 +691,28 @@
   function myFunction2() {
     document.getElementById("myDropdown2").classList.toggle("show");
   }
+
+  // function myFunction3() {
+  //   document.getElementById("myDropdown3").classList.toggle("show");
+  // }
+
+  const faq = document.querySelectorAll(".faq");
+  
+  faq.forEach((item, index) => {
+    let header = item.querySelector("header");
+    header.addEventListener("click", () => {
+      item.classList.toggle("open");
+
+      let expand = item.querySelector(".expand");
+      if(item.classList.contains(open)){
+        expand.style.display = `${expand.flex}`;
+      } else {
+        expand.style.display = "none";
+      }
+      console.log(expand);
+    })
+    
+  })
 
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(e) {
@@ -574,6 +727,17 @@
       }
     }
    }
+
+  //  if (!e.target.matches('.faq')) {
+  //   var myDropdown3 = document.getElementById("myDropdown3");
+  //   var i;
+  //   for (i = 0; i < dropdowns.length; i++) {
+  //     var openDropdown = dropdowns[i];
+  //     if (myDropdown3.classList.contains('show')) {
+  //       myDropdown3.classList.remove('show');
+  //     }
+  //   }
+  //  }
   }
   </script>
 
