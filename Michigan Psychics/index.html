@@ -16,6 +16,7 @@
         <h3>NEED HELP? 
           <span>CALL US ANYTIME!</span>
           <span>1.800.555.MICH</span> 
+          <hr width="1" size="20"/>
           <li><a href="#">*INTRODUCTORY OFFER</a></li>
         </h3> 
     </div>
@@ -271,8 +272,9 @@
       <div class="ban-5">
         <div class="col-5">
           <h2>Find the best Psychic for you</h2>
-          <div class="bg-image3">
-            <img src="images/kindpng_2399056.png" height="120vh">
+          <div class="match-me-btn">
+            <span></span>
+            <button><h2>Match Me</h2><img src="images/kindpng_2399056.png" height="120vh"></button>
           </div>
         </div>
       </div>
@@ -437,25 +439,25 @@
           <ul>
             <div>
               <li class="perk">
-                <i class="fa-regular fa-dollar-sign"></i> 
+                <i class="fa-solid fa-peace"></i> 
                 <h3>Get peace of mind in challenging times</h3>
               </li>
             </div>
             <div>
               <li class="perk">
-                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <i class="fa-solid fa-brain"></i>
                 <h3>Validate difficult decisions</h3>
               </li>
             </div>
             <div>
               <li class="perk">
-                <i class="fa-brands fa-phoenix-framework"></i>
+                <i class="fa-solid fa-shoe-prints"></i>
                 <h3>Insight for the next step forward</h3>
               </li>
             </div>
             <div>
               <li class="perk">
-                <i class="fa-regular fa-calendar-check"></i>
+                <i class="fa-solid fa-spa"></i>
                 <h3>Bring closure and healing in grief</h3>
               </li>
             </div>
@@ -530,16 +532,16 @@
         <h2>Frequently Asked Questions</h2>
         <span>Expand All</span>
         <div class="faq-all">
-          <div class="faq" onclick="myFunction3()">
+          <div class="faq" onclick="description('.description');">
             <header>
               <h3>How will charges appear on my card’s statement?</h3>
               <i class="fa-solid fa-plus"></i>
             </header>
             <hr>
-            <div class="expand" id="myDropdown3">
+           
               <p class="description">To safeguard your privacy, charges will always appear on your credit card statement as “TELCASH.”</p>
-              <i class="fa-solid fa-minus"></i>
-            </div>
+
+     
           </div>
           
           <!-- <div class="sign-in-dropdown">
@@ -684,61 +686,9 @@
     </div>
      
   </div>
-  <script>
-  /* When the user clicks on the button, 
-  toggle between hiding and showing the dropdown content */
+  <script src ="app.js">
 
-  function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
-  }
-
-  // function myFunction3() {
-  //   document.getElementById("myDropdown3").classList.toggle("show");
-  // }
-
-  const faq = document.querySelectorAll(".faq");
   
-  faq.forEach((item, index) => {
-    let header = item.querySelector("header");
-    header.addEventListener("click", () => {
-      item.classList.toggle("open");
-
-      let expand = item.querySelector(".expand");
-      if(item.classList.contains(open)){
-        expand.style.display = `${expand.flex}`;
-      } else {
-        expand.style.display = "none";
-      }
-      console.log(expand);
-    })
-    
-  })
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-
-    if (!e.target.matches('.dropbtn2')) {
-    var myDropdown2 = document.getElementById("myDropdown2");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (myDropdown2.classList.contains('show')) {
-        myDropdown2.classList.remove('show');
-      }
-    }
-   }
-
-  //  if (!e.target.matches('.faq')) {
-  //   var myDropdown3 = document.getElementById("myDropdown3");
-  //   var i;
-  //   for (i = 0; i < dropdowns.length; i++) {
-  //     var openDropdown = dropdowns[i];
-  //     if (myDropdown3.classList.contains('show')) {
-  //       myDropdown3.classList.remove('show');
-  //     }
-  //   }
-  //  }
-  }
   </script>
 
 </body>

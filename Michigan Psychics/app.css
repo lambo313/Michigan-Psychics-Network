@@ -139,6 +139,12 @@ h3 {
   padding: 5px 0px;
 }
 
+.header hr {
+  margin-left: 12px;
+  border: 2px inset;
+  margin-top: 2px
+}
+
 .mobile-menu-bar {
   display: none;
   padding-right: 10px;
@@ -190,11 +196,11 @@ h3 {
 
 }
 
-.logo:hover, .account-toggle-btn:hover, .menu-bar-logo:hover, .menu-toggle-btn:hover, .connect:hover, .see-all-psychics-btn:hover, .join-now-btn:hover, .new-customer-rate-btn:hover, .how-it-works-btn:hover {
+.logo:hover, .account-toggle-btn:hover, .menu-bar-logo:hover, .menu-toggle-btn:hover, .connect:hover, .see-all-psychics-btn:hover, .join-now-btn:hover, .new-customer-rate-btn:hover, .how-it-works-btn:hover, .match-me-btn:hover {
   scale: 1.02;
 }
 
-.logo:active, .account-toggle-btn:active, .menu-bar-logo:active, .menu-toggle-btn:active, .getstartedbtn:active, .getstartedbtn-bkgrd:active, .connect:active, .see-all-psychics-btn:active, .join-now-btn:active, .new-customer-rate-btn:active, .how-it-works-btn:active {
+.logo:active, .account-toggle-btn:active, .menu-bar-logo:active, .menu-toggle-btn:active, .getstartedbtn:active, .getstartedbtn-bkgrd:active, .connect:active, .see-all-psychics-btn:active, .join-now-btn:active, .new-customer-rate-btn:active, .how-it-works-btn:active, .match-me-btn:active {
   scale: 0.98;
 }
 .right {
@@ -475,7 +481,7 @@ body {
 	--c1: #e399ff;
 	--ts: 50%/calc(var(--sz) * 17.5) calc(var(--sz) * 29.5);
 }
-.navbar-top a:hover, nav a:hover, .logo:hover, .getstartedbtn:hover, .logo:hover, .account-toggle-btn:hover, .menu-bar-logo:hover, .menu-toggle-btn:hover, .connect:hover, .see-all-psychics-btn:hover, .join-now-btn:hover, .new-customer-rate-btn:hover, .how-it-works-btn:hover {
+.navbar-top a:hover, nav a:hover, .logo:hover, .getstartedbtn:hover, .logo:hover, .account-toggle-btn:hover, .menu-bar-logo:hover, .menu-toggle-btn:hover, .connect:hover, .see-all-psychics-btn:hover, .join-now-btn:hover, .new-customer-rate-btn:hover, .how-it-works-btn:hover, .match-me-btn:hover {
 		/* bg */
 	animation: colors var(--sp) linear 0s infinite;
 }
@@ -796,7 +802,7 @@ overflow-x {
   font-size: 21px;
   font-weight: 300;
   color: rgba(119, 217, 230, 0.9);
-  background: linear-gradient(to right bottom,rgba(1,1,3,0.8),rgba(33,41,104,0.7));
+  background: linear-gradient(to right bottom,rgba(1,1,3,0.8),rgba(254,254,252,0.7));
   border: 4px solid rgba(119, 217, 230, 0.85);
   border-radius: 10px;
   padding: 8px 60px;
@@ -885,6 +891,34 @@ overflow-x {
 
 .col-5 h2 {
   font-size: 36px
+}
+
+.match-me-btn button img {
+  opacity: 10%;
+}
+
+.match-me-btn button {
+  margin-left: 20px;
+  cursor: pointer;
+  font-family: fantasy;
+  font-size: 21px;
+  /* bottom: 160px; */
+  padding-left: -200px;
+  font-weight: 500;
+  color: rgba(119, 217, 230, 0.9);
+  background: linear-gradient(to right bottom,rgba(96, 36, 122, 0.9),rgba(119, 217, 230, 0.9));
+  border: 4px solid rgb(119, 217, 230);
+  border-radius: 50%;
+  z-index: 3;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.7) 1px 0 10px;
+  transform-origin:center;
+  scale: .80;
+}
+.match-me-btn button h2 {
+  position: absolute;
+  margin-top: 42px;
+  margin-left: 12px;
 }
 
 .ban-6-container {
@@ -1484,7 +1518,6 @@ overflow-x {
 
 .faq-all hr {
   margin-top: -20px;
-  margin-bottom: 25px;
 }
 
 /* .faq {
@@ -1509,7 +1542,7 @@ overflow-x {
 }
 
 .expand {
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
@@ -1519,9 +1552,10 @@ overflow-x {
   margin-top: 6px;
 }
 
-/* .faq-all .description {
-
-} */
+.faq .description {
+  color: #e399ff;
+  display: none;
+}
 
 .ban-7-container {
   margin: 0px auto;
