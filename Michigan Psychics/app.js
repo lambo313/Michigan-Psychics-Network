@@ -1,5 +1,33 @@
+  /* When the user clicks on the menu bar, 
+toggle between displaying and hiding the nav */
+  
+  
+// let mobileMenu = document.querySelectorAll(".menu-toggle-btn");
+// let clickedMm = document.querySelector(".nav:first-of-type");
+// for(var i = 0; i < li.length; i++) {
+//   mobileMenu[i].addEventListener("click", (e)=> {
+//    if(e.target.classList.contains(".menu-toggle-btn"))
+//       clickedMm.style.display="none";
+//      else {
+//       clickedMm.style.display="none";
+//      }
+//       // clickedMm.classList.toggle(".nav:first-of-type")
+//  });
+// }
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
+
+// function toggle() {
+//   var elem = document.getElementById("mobile-nav");
+//   if(elem.style.display == "block"){
+//       elem.style.display="none";
+//   } else {
+//       elem.style.display="block";
+//   }
+// }
+
+
 
   function myFunction2() {
     document.getElementById("myDropdown2").classList.toggle("show");
