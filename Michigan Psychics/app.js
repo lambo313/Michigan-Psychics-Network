@@ -1,6 +1,52 @@
   /* When the user clicks on the menu bar, 
 toggle between displaying and hiding the nav */
+
+const toggleButton = document.getElementsByClassName('menu-toggle-btn')[0];
+const mobileMenu = document.getElementsByClassName('mobile-nav')[0];
+const nonMenu = document.getElementsByClassName('content','ban-2','ban-3-container')[0];
+
+toggleButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active')
+  toggleButton.classList.toggle('active')
+
+  // if (mobileMenu.classList.contains('active')) {
+  //     nonMenu.addEventListener('click', () => {
+  //       mobileMenu.classList.toggle('inactive');
+  //       toggleButton.classList.toggle('inactive');
+  //     })}
+  //     if (mobileMenu.classList.contains('inactive')) {
+  //       toggleButton.addEventListener('click', () => {
+  //         mobileMenu.classList.toggle('active')
+  //         toggleButton.classList.toggle('active')
+  //     })
   
+  if (mobileMenu.classList.contains('active')) {
+    toggleButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('inactive');
+      toggleButton.classList.toggle('inactive');
+    })}    
+})
+
+const loginToggle = document.getElementsByClassName('account-toggle-btn')[0];
+const loginPage = document.getElementsByClassName('sign-in-page')[0];
+const exitLogin = document.getElementsByClassName('exit-sign-in')[0];
+const noScroll = document.getElementsByClassName('hero')[0];
+const exitLogin2 = document.getElementsByClassName('sign-in-page-logo')[0];
+
+loginToggle.addEventListener('click', () => {
+  loginPage.classList.toggle('active')
+  noScroll.classList.toggle('no-scroll')
+})
+
+exitLogin.addEventListener('click', () => {
+  loginPage.classList.remove('active')
+  noScroll.classList.remove('no-scroll')
+})
+
+exitLogin2.addEventListener('click', () => {
+  loginPage.classList.remove('active')
+  noScroll.classList.remove('no-scroll')
+})
   
 // let mobileMenu = document.querySelectorAll(".menu-toggle-btn");
 // let clickedMm = document.querySelector(".nav:first-of-type");
@@ -99,12 +145,12 @@ scrollContainer.addEventListener("wheel", (evt) => {
 
 nextBtn.addEventListener("click", ()=>{
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft += 360;
+  scrollContainer.scrollLeft += 370;
 })
 
 backBtn.addEventListener("click", ()=>{
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft -= 360;
+  scrollContainer.scrollLeft -= 370;
 })
 
 let ttasscrollContainer = document.querySelector(".ttas ul");
