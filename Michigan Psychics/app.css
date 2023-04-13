@@ -10,6 +10,7 @@
 
     --primarycolor: rgb(130,202,222);
     --secondarycolor: white;
+    --notinuse: rgb(160, 160, 160);
 
     --primarybackground: linear-gradient(to right top,rgba(1,1,3,0.8),rgba(33,41,104,0.7));
     --primarybackground-v2: linear-gradient(to right bottom,rgba(1,1,3,0.8),rgba(33,41,104,0.7));
@@ -56,6 +57,18 @@
   .hero {
   }
 } */
+
+
+@media (max-width: 1372px) and (min-width: 768px) {
+  .psychic-stats span {
+    flex-direction: row !important;
+  }
+
+  .psychic-stats {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+}
 
 
 @media (max-width: 768px) {
@@ -332,7 +345,24 @@
   .faq-glass{
     width: 250px !important;
   }
+
+  .psychic-stats span {
+    flex-direction: row !important;
+  }
+
+  .psychic-stats {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
   
+  .ban-8-containerB h2, .about-psychic > p, .testimonials > p{
+    scale: .80; 
+    transform-origin:top center;
+    margin-bottom: -15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 642px) {
@@ -371,11 +401,17 @@
 
 }
 
-/* @media (max-width: 542px) {
-  .footer-logo {
-    padding-bottom: 20px;
+@media (max-width: 584px) {
+  .ban-8-containerB img {
+    width: 50%!important;
+    height: 184px !important;
+    margin: 0 auto;
   }
-} */
+
+  .psychic-stats {
+    flex-direction: column !important;
+  }
+}
 
 h1 {
   text-shadow: var(--primarytextshadow);
@@ -584,11 +620,11 @@ h3 {
 
 }
 
-.logo:hover, .account-toggle-btn:hover, .menu-bar-logo:hover, .menu-toggle-btn:hover, .connect:hover, .see-all-psychics-btn:hover, .join-now-btn:hover, .new-customer-rate-btn:hover, .how-it-works-btn:hover, .match-me-btn:hover, .footer-logo:hover, .exit-sign-in h3:hover, .sign-in-page-logo:hover, .sign-in a:hover{
+.logo:hover, .account-toggle-btn:hover, .menu-bar-logo:hover, .menu-toggle-btn:hover, .connect:hover, .see-all-psychics-btn:hover, .join-now-btn:hover, .new-customer-rate-btn:hover, .how-it-works-btn:hover, .match-me-btn:hover, .exit-sign-in h3:hover, .sign-in-page-logo:hover, .sign-in a:hover, .talk:hover, .chat:hover{
   scale: 1.03;
 }
 
-.logo:active, .account-toggle-btn:active, .menu-bar-logo:active, .menu-toggle-btn:active, .getstartedbtn:active, .getstartedbtn-bkgrd:active, .connect:active, .see-all-psychics-btn:active, .join-now-btn:active, .new-customer-rate-btn:active, .how-it-works-btn:active, .match-me-btn:active, .footer-logo:active,.see-all-psychics-btn:active, .join-now-btn:active, .new-customer-rate-btn:active, .how-it-works-btn:active, .match-me-btn:active, .footer-logo:active, .exit-sign-in h3:active, .sign-in-page-logo:active, .sign-in a:active{
+.logo:active, .account-toggle-btn:active, .menu-bar-logo:active, .menu-toggle-btn:active, .getstartedbtn:active, .getstartedbtn-bkgrd:active, .connect:active, .see-all-psychics-btn:active, .join-now-btn:active, .new-customer-rate-btn:active, .how-it-works-btn:active, .match-me-btn:active, .see-all-psychics-btn:active, .join-now-btn:active, .new-customer-rate-btn:active, .how-it-works-btn:active, .match-me-btn:active, .exit-sign-in h3:active, .sign-in-page-logo:active, .sign-in a:active, .talk:active, .chat:active{
   scale: 0.98;
 }
 .right {
@@ -950,7 +986,7 @@ body {
 	--c1: #e399ff;
 	--ts: 50%/calc(var(--sz) * 17.5) calc(var(--sz) * 29.5);
 }
-.navbar-top .right a:hover, nav a:hover, .logo:hover, .getstartedbtn:hover, .logo:hover, .account-toggle-btn:hover, .menu-bar-logo:hover, .menu-toggle-btn:hover, .connect:hover, .see-all-psychics-btn:hover, .join-now-btn:hover, .new-customer-rate-btn:hover, .how-it-works-btn:hover, .match-me-btn:hover, .footer-logo:hover, .see-all-psychics-btn:hover, .join-now-btn:hover, .new-customer-rate-btn:hover, .how-it-works-btn:hover, .match-me-btn:hover, .footer-logo:hover, .sign-in a:hover{
+.navbar-top .right a:hover, nav a:hover, .logo:hover, .getstartedbtn:hover, .logo:hover, .account-toggle-btn:hover, .menu-bar-logo:hover, .menu-toggle-btn:hover, .connect:hover, .see-all-psychics-btn:hover, .join-now-btn:hover, .new-customer-rate-btn:hover, .how-it-works-btn:hover, .match-me-btn:hover, .see-all-psychics-btn:hover, .join-now-btn:hover, .new-customer-rate-btn:hover, .how-it-works-btn:hover, .match-me-btn:hover, .sign-in a:hover{
 		/* bg */
 	animation: colors var(--sp) linear 0s infinite;
 }
@@ -1153,17 +1189,24 @@ path {
   
 }
 
+.psychics-gallery .psychic-card:nth-child(n+2) {
+  filter: grayscale(1);
+  opacity: .6;
+}
+
 /* Psychic Page */
 .ban-8B {
   margin-top: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: -383px;
+  margin-top: -343px;
 }
 
-.ban-8 p{
-  font-size: 18px;
+.ban-8B h2{
+  padding-bottom: 20px;
+  /* padding-left: 120px;
+  padding-right: 120px; */
 }
 
 .ban-8-containerB {
@@ -1174,17 +1217,22 @@ path {
   backdrop-filter: var(--secondarybackdrop-filter);
   outline: none;
   /* position:absolute center; */
-  padding: 30px;
-  min-width: 50%;
+  padding: 15px 30px 15px 30px; 
+  /* min-width: 90%; */
   flex: 2;
 }
 
 .ban-8-containerB img {
-  max-height: 400px;
-  max-width: 75%;
+  max-height: 408px;
+  height: 100%;
+  max-width: 100%;
+  width: 632px;
+  object-fit: cover;
   border: var(--primaryborder);
   border-radius: var(--primaryborder-radius);
   box-shadow: 5px 8px 5px rgba(255, 255, 255, 0.2);
+  object-position: 50% 33%;
+  margin: 0 auto;
 }
 
 
@@ -1245,12 +1293,17 @@ path {
   /* width: 100%; */
   /* height: 100%; */
   overflow: hidden;
+  flex-shrink: 2;
+  min-width: 400px;
 }
 
 .ban-8-container2B iframe {
   min-width: 100%; 
-  min-height: 100%; 
-  object-fit: cover;
+  height: 712px;
+  border-radius: 10px;
+  border: var(--primaryborder);
+  /* background-color: aliceblue; */
+  /* object-fit: cover; */
 }
 
 .psychic-stats {
@@ -1258,14 +1311,31 @@ path {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin-right: 80px;
+  margin-left: 80px;
+  /* padding-right: -80px; */
 }
 
+/* .psychic-stats h2 {
+  flex-basis: 0;
+} */
+
 .psychic-stats span {
-  margin: auto 40px ;
+  margin: 10px 0px ;
   display: flex;
-  grid-gap: 40px;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 40px;
 }
+
+.psychic-stats p, .psychic-stats h3, .psychic-stats h4, .psychic-stats h5, .talk-chat p, .about-psychic p, .testimonials p, .testimonials a {
+  text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+/* .psychic-stats span > div {
+  
+} */
 
 .in-que {
   flex-shrink: 0;
@@ -1307,8 +1377,18 @@ path {
   grid-gap: 20px;
 }
 
+.talk-chat-buttons i {
+  color: var(--primarycolor);
+}
+
 .talk-chat-buttons button {
   padding: 20px;
+  color: var(--secondarycolor);
+  border-radius: 20px;
+  border: var(--secondaryborder);
+  background:var(--primarybackground-v2);
+  backdrop-filter: var(--secondarybackdrop-filter);
+  cursor: pointer;
 }
 
 .about-psychic {
@@ -1355,13 +1435,15 @@ path {
 .testimonials > p{
   font-size: 32px;
   flex: 2;
+  color: var(--notinuse);
 }
 
 .testimonials a {
-color: var(--secondarycolor);
+color: var(--notinuse);
 padding: 0px 10px;
 text-decoration: underline;
 font-size: 14px;
+cursor: default;
 }
 
 .search-write-test{
@@ -1374,6 +1456,31 @@ font-size: 14px;
   flex: 2;
 }
 
+
+.psychic-card p, .psychic-card h3, .psychic-card h4, .psychic-card h5{
+  text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.ratings-price i, .talk-chat i {
+  color: var(--primarycolor);
+}
+
+/* .favorites i {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.picks i {
+  margin-right: 5px;
+} */
+
+.talk-chat-buttons i {
+  margin-right: 5px;
+}
+
+
+/* ______________________________ */
+
 .card-text-price-P{
   display: flex;
   flex-direction: row;
@@ -1385,7 +1492,6 @@ font-size: 14px;
 
 .card-text-price-P h4:nth-child(1){
   color: rgb(119, 230, 124);
-  text-shadow: rgba(255, 255, 255, 0.7) 1px 0 10px;
 
 }
 
@@ -1397,118 +1503,6 @@ font-size: 14px;
 .card-text-price-P i {
   color: var(--primarycolor);
 }
-
-
-
-.psychics-gallery2 {
-
-  /* max-width: 100%; */
-  display: flex;
-  margin: 25px auto;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  align-items: center;
-  /* width: 900px; */
-}
-
-.psychics-gallery2 div{
-  padding: 10px;
-  flex: none;
-}
-
-.psychics-gallery2 div img{
-  width: 100%;
-  border: var(--primaryborder);
-  border-radius: var(--primaryborder-radius);
-  box-shadow: 5px 8px 5px rgba(255, 255, 255, 0.2);
-  
-}
-
-.complete {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* grid-template: 2fr 2fr; */
-}
-
-.left-main {
-  position: relative center;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-
-/* .content-2B {
-  margin-top: -380px;
-  display: flex;
-  flex-direction: row;
-  max-width:50%;
-  
-} */
-
-/* .ban-2B {
-  margin: 0px auto;
-  border: var(--primaryborder);
-  border-radius: var(--primaryborder-radius);
-  outline: none;
-  position:absolute center;
-  background: linear-gradient(to right bottom,rgba(1,1,3,0.2),rgba(244,244,242,0.1));
-  backdrop-filter: var(--secondarybackdrop-filter);
-  padding: var(--primarypadding);
-  z-index: 10;
-} */
-
-.right-side {
-  /* position: relative center;
-  margin-top: -380px; */
-  /* flex: 1; */
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  /* justify-content: space-between; */
-  /* max-width:50%; */
-}
-
-.ban-2B-side {
-  margin: 0px auto;
-  border: var(--primaryborder);
-  border-radius: var(--primaryborder-radius);
-  outline: none;
-  position:absolute;
-  background: linear-gradient(to right bottom,rgba(1,1,3,0.2),rgba(244,244,242,0.1));
-  backdrop-filter: var(--secondarybackdrop-filter);
-  padding: var(--primarypadding);
-  z-index: 10;
-  margin-top: -380px;
-  flex-basis: 0;
-  /* width: 50%; */
-  max-width: 900px;
-  /* right: 300px; */
-}
-
-.ban-2B-side2 {
-  margin: 0px auto;
-  border: var(--primaryborder);
-  border-radius: var(--primaryborder-radius);
-  outline: none;
-  position:relative;
-  background: linear-gradient(to right bottom,rgba(1,1,3,0.2),rgba(244,244,242,0.1));
-  backdrop-filter: var(--secondarybackdrop-filter);
-  padding: var(--primarypadding);
-  z-index: 10;
-  margin-top: -380px;
-  /* max-width: 30%; */
-  /* width: 540px; */
-  flex-basis: 0;
-  width: 50%;
-  /* left: 300px; */
-}
-
-/* ______________________________ */
-
 overflow-x {
   object-fit: cover;
 }
@@ -1519,11 +1513,14 @@ overflow-x {
 }
 
 .psychics-gallery div img{
+  position: center;
   width: 100%;
   border: var(--primaryborder);
   border-radius: var(--primaryborder-radius);
   box-shadow: 5px 8px 5px rgba(255, 255, 255, 0.2);
-  
+  width: 236px;
+  height: 236px;
+  object-fit: cover;
 }
 
 .psychic-card {
@@ -1531,6 +1528,10 @@ overflow-x {
   max-width: 256px;
   
 }
+
+/* .psychic-card-image {
+  
+} */
 
 .psychic-card img {
   scale: 1;
@@ -1548,6 +1549,7 @@ overflow-x {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 2px;
+  
 }
 
 .card-text {
@@ -1598,7 +1600,6 @@ overflow-x {
 
 .connect {
   font-size: 20px;
-  cursor: pointer;
   position: absolute;
   margin: 25px 50px;
   color:var(--primarycolor);
@@ -1610,7 +1611,10 @@ overflow-x {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.connect:first-child{
+  cursor: pointer;
 }
 
 
@@ -1628,6 +1632,10 @@ overflow-x {
   background: linear-gradient(to right bottom,rgba(1,1,3,0.2),rgba(244,244,242,0.1));
   backdrop-filter: var(--secondarybackdrop-filter);
   padding: var(--primarypadding);
+}
+
+.ban-2 > p, .ban-6-container > p, .ban-7-container > p, .ban-8-container > p, .ban-9-container > p, .content-10 > p, .content-12 h3, .ban-13 p, footer h4, footer a, footer h5, .footer p {
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .ban-3-container {
@@ -1878,7 +1886,6 @@ overflow-x {
 }
 
 .ban-6 p{
-  font-size: 18px;
   padding-bottom: 10px;
 }
 
@@ -2116,9 +2123,10 @@ overflow-x {
   flex-wrap: wrap;
 }
 
-.ban-8 p{
-  font-size: 18px;
+.ban-8-container > p {
+  font-size: 16px;
 }
+
 
 .content-8 {
   padding-top: 20px;
@@ -2156,7 +2164,7 @@ overflow-x {
   width: 260px;
 }
 
-.ban-8-container p {
+.content-8 p {
   font-size: 14px;
 }
 
@@ -2216,7 +2224,6 @@ overflow-x {
 }
 
 .ban-9 p{
-  font-size: 18px;
   padding: 16px 0px;
   text-align: center;
 }
@@ -2297,11 +2304,6 @@ overflow-x {
 }
 
 
-
-.ban-10 p{
-  font-size: 18px;
-}
-
 .content-10 {
   /* padding-top: 20px;
   padding-bottom: 20px; */
@@ -2324,7 +2326,7 @@ overflow-x {
 }
 
 .ban-10-container p {
-  font-size: 15px;
+  font-size: 16px;
   padding-top: 14px;
   text-align: center;
 }
@@ -2751,7 +2753,6 @@ overflow-x {
 
 .footer-logo {
   position: center;
-  cursor: pointer;
   transition: scale 0.2 ease;
   display: flex;
   flex: 0 1 1;
@@ -2759,6 +2760,10 @@ overflow-x {
   flex-basis: auto;
   justify-content: center;
   width: 200px;
+}
+
+.footer-logo a{
+  cursor: default;
 }
 
 .links {
