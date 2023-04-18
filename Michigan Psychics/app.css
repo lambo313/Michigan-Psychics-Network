@@ -19,8 +19,8 @@
     --primarytextshadow: rgba(33,41,104,0.7) 1px 0 10px;
     --secondarytextshadow: rgba(255, 255, 255, 0.7) 1px 0 10px;
 
-    --primaryborder: 3px solid rgba(255, 255, 255, 0.1);
-    --secondaryborder: 3px solid rgba(130,202,222, 1);
+    --primaryborder: 1px solid rgba(255, 255, 255, 0.1);
+    --secondaryborder: 1px solid rgba(130,202,222, 1);
 
     --primaryborder-radius: 10px;
 
@@ -40,12 +40,15 @@
    background: black;
   background-image: url("images/516983.png");
   background-image: no-repeat;
-   background-size: 100% auto;
+   background-size: cover;
    background-position: center;
    background-attachment: fixed;
    position: relative;
    overflow-y: auto;
    overflow-x: hidden;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover; 
 }
 
 .hero.no-scroll {
@@ -158,6 +161,7 @@
     transform-origin:top left;
     scale: .80;
     margin-right: -90px;
+
   }
   
   .ban-2 > p {
@@ -175,6 +179,7 @@
     transform-origin:top center;
     scale: .75;
     margin-bottom: -120px;
+    text-align: center;
     /* padding-right: -40px; */
     
   }
@@ -183,6 +188,8 @@
     transform-origin:top left;
     scale: .80;
     margin-bottom: -20px;
+    margin-right: -60px;
+    margin-left: 0px;
   }
 
 
@@ -208,7 +215,7 @@
 .ban-6-container > h2, .ban-6-container > p {
   scale: .80; 
   transform-origin:top left;
-  margin-right: -90px;
+  margin-right: -100px;
 }
 .ban-7-container > h2, .ban-7-container > p {
   scale: .80; 
@@ -284,8 +291,10 @@
 
 .content-8 {
   scale: .80; 
-  margin-top: -30px;
   margin-bottom: -40px;
+  margin-right: -145px;
+  margin-bottom: -80px;
+  transform-origin: top left;
 }
 
 .ban-9-container > h2, .ban-9-container > p {
@@ -340,6 +349,7 @@
     transform-origin:top left;
     scale: .80;
     margin-bottom: -20px;
+    margin-right: -80px;
   }
 
   .faq-glass{
@@ -385,8 +395,9 @@
   .content-12 {
     margin-left: -60px;
     margin-right: -60px;
-    margin-top: -40px;
-    margin-bottom: -40px;
+    margin-top: -10px;
+    margin-bottom: -80px;
+    transform-origin:top center;
     scale: .80;
   }
 
@@ -399,6 +410,9 @@
     margin-bottom: -180px;
   }
 
+.footer-content p {
+  margin: 0 -40px;
+}
 }
 
 @media (max-width: 584px) {
@@ -412,6 +426,211 @@
     flex-direction: column !important;
   }
 }
+
+@media screen and (max-width: 472px) {
+
+  .ban-1 {
+    margin: 0px -20px !important;
+  } 
+
+  .ban-1 h1 {
+    scale: .60;
+    margin: 0px -80px;
+  }
+
+  .ban-1-title  {
+    margin-top: 10px !important;
+  }
+
+  .content-2 {
+    margin-top: -280px !important;
+  }
+
+  .ban-2 {
+    margin-bottom: -10px;
+  }
+
+  .ban-2 > h2, .ban-2 > p {
+    transform-origin:top left;
+    scale: .60;
+    margin-right: -230px;
+    margin-bottom: -10px;
+  }
+
+  .psychics-gallery {
+    margin-top: -10px !important;
+  }
+
+  .see-all-psychics {
+    scale: .80;
+    transform-origin:top center;
+  }
+
+  .content-3 {
+    transform-origin:top center;
+    scale: .6;
+    margin-bottom: -190px;
+    text-align: center;
+    margin-left: -130px;
+    margin-right: -130px;
+  }
+
+  .ban-3-container > h2 {
+    transform-origin:top left;
+    scale: .60;
+  }
+
+  .ban-5 {
+    margin: -60px -140px -30px -140px;
+  }
+
+  .content-5 {
+    scale: .60;
+  }
+
+  .ban-6-container {
+    scale: .80;
+    text-align: center;
+    transform-origin: top center;
+    margin-bottom: -70px;
+  }
+
+  .ban-6-container h2, .ban-6-container p {
+    margin-left: -60px;
+    margin-right: -160px;
+  }
+  
+  .ban-7-container > h2, .ban-7-container > p {
+    transform-origin:top left;
+    margin-right: -240px;
+    scale: .60;
+  }
+
+  .content-7-footer {
+    margin-top: 180px;
+  }
+
+  .content-7 ul {
+    scale: .80;
+    margin-left: -30px;
+    margin-right: -20px;
+  }
+/* 
+  .offers {
+    margin-bottom: -160px;
+  } */
+
+  .content-7 {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -60px;
+    margin-bottom: -40px;
+  }
+
+  .content-8 {
+    transform-origin:top left;
+    scale: .60;
+    margin-right: -275px;
+    margin-left: 0px;
+    margin-bottom: -130px;
+  }
+
+  .ban-9-container {
+    scale: .80;
+    transform-origin:top center;
+    margin-bottom: -60px;
+    margin-left: -40px;
+    margin-right: -40px;
+    text-align: center;
+  }
+
+  .content-10  {
+    scale: .80;
+    transform-origin:top center;
+    margin-left: -95px;
+    margin-right: -95px;
+    margin-bottom: -40px;
+  }
+
+  .content-11 {
+    margin-bottom: -180px;
+    margin-left: -80px;
+    margin-right: -80px;
+    scale: .67 !important;
+   }
+
+   .ban-11-container > h2 {
+    transform-origin:top left;
+    scale: .60;
+    margin-bottom: -20px;
+    margin-right: -215px;;
+  }
+
+  .content-12 {
+    margin-left: -130px;
+    margin-right: -130px;
+    margin-bottom: -180px;
+    transform-origin:top center;
+    scale: .60;
+  }
+
+  .content-13{
+    scale: .6;
+    transform-origin:top center;
+    margin-left: -180px;
+    margin-right: -180px;
+    margin-top: -30px;
+    margin-bottom: -340px;
+  }
+
+  .footer-top > div, .footer-right > div {
+    scale: .95;
+    transform-origin: top;
+  }
+
+  .footer > * {
+    scale: .80;
+    transform-origin: center;
+  }
+
+  .footer-right {
+    margin-bottom: -30px;
+  }
+}
+@media screen and (max-width: 440px) {
+
+  .content-8 {
+    margin-right: -210px;
+    margin-bottom: -170px;
+  }
+}
+
+@media screen and (max-width: 431px) {
+
+
+  .links {
+    flex-wrap: wrap !important;
+    flex-shrink: 2 !important;
+  }
+
+  .soc-app{
+    margin-left: -40px !important;
+    margin-right: -40px !important;
+  }
+
+  .footer ul {
+    flex-wrap: wrap !important; 
+  }
+  
+}
+
+@media screen and (max-width: 356px) {
+  .content-3 {
+    margin-bottom: -280px;
+  }
+
+}
+
 
 h1 {
   text-shadow: var(--primarytextshadow);
@@ -511,15 +730,28 @@ h3 {
   align-items: left;
 }
 
-.sign-in-email input, .sign-in-password input{
+.search-bar input, .sign-in-email input, .sign-in-password input{
   color: var(--secondarycolor);
   background: transparent;
+  border: var(--secondaryborder);
+  border-radius: 4px;
 }
 
 .sign-in-page label {
   font-size: 12px;
   margin-top: -30px;
 }
+
+/*  */
+/* .particles-js-canvas-el {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left:0;
+} */
+/*  */
 
 .header {
   display: flex auto;
@@ -1084,8 +1316,8 @@ path {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 50px;
-  margin-bottom: 100px;
-  height: 100px;
+  margin-bottom: 50px;
+  height: 80px;
   border: var(--primaryborder);
   border-radius: var(--primaryborder-radius);
   outline: none;
@@ -1223,7 +1455,7 @@ path {
 }
 
 .ban-8-containerB img {
-  max-height: 408px;
+  max-height: 448px;
   height: 100%;
   max-width: 100%;
   width: 632px;
@@ -1231,7 +1463,7 @@ path {
   border: var(--primaryborder);
   border-radius: var(--primaryborder-radius);
   box-shadow: 5px 8px 5px rgba(255, 255, 255, 0.2);
-  object-position: 50% 33%;
+  object-position: 50% 25%;
   margin: 0 auto;
 }
 
@@ -1619,12 +1851,9 @@ overflow-x {
 
 
 
-.content-2 {
-  margin-top: -200px;
-}
 
-.ban-2 {
-  margin: 0px auto;
+.content-2 {
+  margin: -200px auto 0px auto;
   border: var(--primaryborder);
   border-radius: var(--primaryborder-radius);
   outline: none;
@@ -1862,7 +2091,7 @@ overflow-x {
   font-size: 36px
 }
 
-.ban-6-container {
+.ban-6 {
   margin: 0px auto;
   border: var(--primaryborder);
   border-radius: var(--primaryborder-radius);
@@ -1943,7 +2172,7 @@ overflow-x {
   text-shadow: rgba(255, 255, 255, 0.7) 1px 0 10px;
 }
 
-.ban-7-container {
+.ban-7 {
   margin: 0px auto;
   border: var(--primaryborder);
   border-radius: var(--primaryborder-radius);
@@ -2129,14 +2358,13 @@ overflow-x {
 
 
 .content-8 {
-  padding-top: 20px;
   padding-bottom: 20px;
   /* margin-left: -20px; */
   /* margin-right: -10px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   grid-gap: 20px;
   flex: 1;
 }
@@ -2204,7 +2432,7 @@ overflow-x {
 }
 
 
-.ban-9-container {
+.ban-9 {
   margin: 0px auto;
   border: var(--primaryborder);
   border-radius: var(--primaryborder-radius);
@@ -2661,7 +2889,7 @@ overflow-x {
   border: var(--primaryborder);
   border-radius: var(--primaryborder-radius);
   padding: var(--primarypadding);
-  width: 360px;
+  width: 322px;
   backdrop-filter: var(--primarybackdrop-filter);
   display: flex;
   flex-direction: column;
@@ -2741,6 +2969,7 @@ overflow-x {
   align-content: center;
   flex: 1;
   grid-column-gap:60px;
+  white-space: nowrap;
   /* margin-right: -150px;
   margin-left: -150px; */
   /* padding-right: -160px; */
@@ -2909,6 +3138,10 @@ overflow-x {
   flex: 0;
   margin-left: -60px;
   margin-right: -60px;
+}
+
+.footer ul li {
+  white-space: nowrap;
 }
 
 /* footer li {
