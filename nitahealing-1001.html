@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/693cc64011.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+    <title>Michigan Psychics Network</title>
+  
+      <style>
+      </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="sign-in-page">
+      <div class="exit-sign-in">
+        <h3>X</h3>
+      </div>
+      <div class="sign-in-page-options">
+        <div class="sign-in-page-logo">
+          <img src="images/FullLogo_Transparent_NoBuffer__8_-removebg-preview.png" width="224px">
+        </div>
+        <h4>Login</h4>
+        <div class="sign-in-email">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Email">
+        </div>
+        <div class="sign-in-password">
+          <i class="fa-solid fa-lock"></i>
+          <input type="text" placeholder="Password">
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="remember">Remember Me
+        </label>
+        <li class="sign-in"><a href="sign-in">Log In</a></li>
+        <li class="forgot-password"><a href="forgot-password">Forgot Password?</a></li>
+        <p>New to Michigan Psychics Network? <a href="sign-up">Sign up now!</a></p>
+      </div>
+    </div>
+    <div class="header">
+        <h3>NEED HELP? 
+          <span>CALL US ANYTIME!</span>
+          <span>1.800.555.MICH</span> 
+          <hr width="1" size="20"/>
+          <li><a href="#">*INTRODUCTORY OFFER</a></li>
+        </h3> 
+    </div>
+    <div class="mobile-menu-bar">
+      <div class="menu-toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="menu-bar-logo">
+        <a href="index.html"><img src="images/TextOnly_NoBuffer.png" width="172px"></a>
+      </div>
+      <div class="account-toggle-btn">
+        <img src="images/FullLogo_Transparent(logo-only).png" width="36px">
+      </div>
+    </div>
+    <nav id ="mobile-nav" class="mobile-nav">
+      <ul>
+          <li><a href="#psychics">PSYCHICS<i class="fa-solid fa-arrow-turn-down"></i></a>
+              <div class="psychics-dropdown" id="psychics-drop">
+                <ul>
+                  <li><a href="all-psychics">All Psychics</a></li>
+                  <li class="sub-menu"><a href="reading-topics">Reading Topics<i class="fa-solid fa-arrow-turn-down"></i></a>
+                      <div class="readingtopics">
+                         <ul>
+                              <li><a href="#">Topic1</a></li>
+                              <li><a href="#">Topic2</a></li>
+                              <li><a href="#">Topic3</a></li>
+                         </ul>
+                      </div>
+                  </li>    
+                  <li><a href="psychic-abilities">Psychic Abilities</a></li>
+              </div>
+          </li>
+          <li><a href="#horoscopes">HOROSCOPES<i class="fa-solid fa-arrow-turn-down"></i></a>
+            <div class="horoscopes-dropdown" id="horoscopes-drop">
+              <ul>
+                <li><a href="all-horoscopes">All Horoscopes</a></li>
+                <li><a href="zodiac-signs">Zodiac Signs</a></li>
+                <li><a href="monthly-horoscopes">Monthly Horoscopes</a></li>
+              </ul>  
+            </div>
+          </li>
+          <li><a href="#blog">BLOG<i class="fa-solid fa-arrow-turn-down"></i></a>
+            <div class="blog-dropdown" id="blog-drop">
+              <ul>
+                <li><a href="zodiac-sign-compatibility">Zodiac Sign Compatibility</a></li>
+                <li><a href="love-&-relationships">Love & Relationships</a></li>
+                <li><a href="astrology-&-numerology">Astrology & Numerology</a></li>
+              </ul>  
+            </div>
+          </li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#how-it- works">HOW IT WORKS</a></li>
+          <li><a href="#about">ABOUT<i class="fa-solid fa-arrow-turn-down"></i></a>
+            <div class="about-dropdown" id="about-drop">
+              <ul>
+                <li><a href="about-michigan-psychics-network">About MPN</a></li>
+                <li><a href="customer-reviews">Customer Reviews</a></li>
+                <li><a href="how-we-help">How We Help</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#contact-us">CONTACT US</a></li>
+          <li><a href="#rewards">REWARDS</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="navbar-top">
+        <div class="left">
+          <div class="logo">
+            <a href="index.html"><img src="images/FullLogo_Transparent_NoBuffer__8_-removebg-preview.png" width="196px"></a>
+          </div>
+        </div>
+        <div class="right">
+          <div class="accounts">
+            <li>
+              <button class="dropbtn1" onclick="myFunction1()">Create Account</button>
+           </li>
+           <hr width="1" size="20"/>
+           <div class="sign-in-dropdown">
+            <button class="dropbtn2" onclick="myFunction2()">Sign-In<i class="fa-solid fa-circle-arrow-down"></i></button>
+              <div class="dropdown-content" id="myDropdown2">
+                <h3>SIGN IN</h3>
+                <div class="sign-in-email">
+                  <input type="text" placeholder="Email">
+                </div>
+                <div class="sign-in-password">
+                  <input type="text" placeholder="Password">
+                </div>
+                <li><a href="sign-in">Sign In</a></li>
+                <li><a href="sign-in-wf">Sign In with Facebook</a></li>
+              </div>
+            </div> 
+   
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <div class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#psychics">PSYCHICS<i class="fa-solid fa-arrow-turn-down"></i></a>
+              <div class="psychics-dropdown" id="psychics-drop">
+                <ul>
+                  <li><a href="all-psychics">All Psychics</a></li>
+                  <li class="sub-menu"><a href="reading-topics">Reading Topics<i class="fa-solid fa-arrow-turn-down"></i></a>
+                      <div class="readingtopics">
+                         <ul>
+                              <li><a href="#">Topic1</a></li>
+                              <li><a href="#">Topic2</a></li>
+                              <li><a href="#">Topic3</a></li>
+                         </ul>
+                      </div>
+                  </li>    
+                  <li><a href="psychic-abilities">Psychic Abilities</a></li>
+              </div>
+          </li>
+          <li><a href="#horoscopes">HOROSCOPES<i class="fa-solid fa-arrow-turn-down"></i></a>
+            <div class="horoscopes-dropdown" id="horoscopes-drop">
+              <ul>
+                <li><a href="all-horoscopes">All Horoscopes</a></li>
+                <li><a href="zodiac-signs">Zodiac Signs</a></li>
+                <li><a href="monthly-horoscopes">Monthly Horoscopes</a></li>
+              </ul>  
+            </div>
+          </li>
+          <li><a href="#blog">BLOG<i class="fa-solid fa-arrow-turn-down"></i></a>
+            <div class="blog-dropdown" id="blog-drop">
+              <ul>
+                <li><a href="zodiac-sign-compatibility">Zodiac Sign Compatibility</a></li>
+                <li><a href="love-&-relationships">Love & Relationships</a></li>
+                <li><a href="astrology-&-numerology">Astrology & Numerology</a></li>
+              </ul>  
+            </div>
+          </li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#how-it- works">HOW IT WORKS</a></li>
+          <li><a href="#about">ABOUT<i class="fa-solid fa-arrow-turn-down"></i></a>
+            <div class="about-dropdown" id="about-drop">
+              <ul>
+                <li><a href="about-michigan-psychics-network">About MPN</a></li>
+                <li><a href="customer-reviews">Customer Reviews</a></li>
+                <li><a href="how-we-help">How We Help</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#contact-us">CONTACT US</a></li>
+          <li><a href="#rewards">REWARDS</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <div class="ban-1">
+        <div class="col-1">
+          <div class="bg-image1" style="position:relative">
+                <img class="image4" src="images/colorful-planet-png-images-free-1QAjqO.png" height="360vh">
+                <img class="image3" src="images/night sky glowing stars.png" height="360vh">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ban-8B">
+      <div class="main-left">
+        <div class="ban-8-containerB">
+          <h2>NitaHealing</h2>
+          <div class="psychic-stats">
+            <img class="" src="images/Psychic-1001.jpg">
+            <span>
+              <div class="status">
+                <p>status</p>
+                <h4>AVAILABLE</h4>
+              </div>
+              <div class="ratings-price">
+                <h5>5.0<i class="fa-solid fa-star"></i>(750+)</h5>
+                <div class="card-text-price-P">
+                  <h4>$1.00</h4>
+                  <h4>$5.00</h4>
+                </div>
+                <P>per minute</P>
+              </div>
+              <div class="in-que">
+                <P>in que</P>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-user"></i>
+                <P>0 people</P>
+              </div>
+              <!-- <div class="est-wait-time">
+                <p>est. wait time</p>
+                <h3>0m</h3>
+              </div> -->
+            </span>
+          </div>
+          <div class="talk-chat">
+            <div class="slogan">
+              <p>Gives you the confidence to make things manifest.</p>
+              <div class="favorites-picks">
+                <div class="favorites">
+                  <i class="fa-regular fa-heart"></i>
+                  <p>add to favorites</p>
+                </div>
+                <div class="picks">
+                  <i class="fa-solid fa-medal"></i>
+                  <p>Staff pick</p>
+                </div>
+              </div>
+            </div>
+            <div class="talk-chat-buttons">
+              <button class="talk"><i class="fa-solid fa-phone"></i>Talk</button>
+              <button class="chat"><i class="fa-brands fa-rocketchat"></i>Chat</button>
+            </div>
+          </div>
+        </div>
+        <div class="about-psychic">
+          <p>About NitaHealing</p>
+          <span class="about-psychic-details">
+            <div class="total-readings">
+              <h5>total readings</h5>
+              <p>2,396 since 2014</p>
+              <h5>ext</h5>
+              <p>---</p>
+            </div>
+            <div class="psychic-topics">
+              <h5>topics</h5>
+              <p>Love & Relationships</p>
+              <p>Career & Work</p>
+              <p>Lost People & Pets</p>
+            </div>
+            <div class="psychic-tools">
+              <h5>tools</h5>
+              <p>Tarot</p>
+              <p>Numerology</p>
+              <p>Astrology</p>
+            </div>
+            <div class="psychic-abilities">
+              <h5>abilities</h5>
+              <p>Clairaudient</p>
+              <p>Remote viewing</p>
+              <p>Clairvoyant</p>
+            </div>
+            <div class="psychic-style">
+              <h5>style</h5>
+              <p>Inspirational</p>
+            </div>
+          </span>
+        </div>
+        <div class="testimonials">
+          <p>
+            Testimonials (0)
+          </p>
+          <div class="search-write-test">
+            <a href="#">Search Testimonials</a>
+            <hr width="1" size="20"/>
+            <a href="#">Write Testimonials</a>
+          </div>
+          
+          <span class="testimonial-details">
+          </span>
+        </div>
+      </div>
+      <div class="ban-8-container2B">
+        <!-- <ul>
+          <div>
+            <iframe width="398" height="224"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+          </div>
+        </ul> -->
+        <iframe src="https://koalendar.com/e/schedule-koankAGf?embed=true" width="100%" height="800px" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-logo">
+              <a href="#"><img src="images/FullLogo_Transparent_NoBuffer__8_-removebg-preview.png" width="164px"></a>
+            </div>
+          <div class="footer-right">
+            <div class="links">
+              <div class="column-3">
+                <h4>About</h4>
+                <hr>
+                <ul>
+                  <li><a href="about-mpn">About MPN</a></li>
+                  <li><a href="customer-reviews">Customer Reviews</a></li>
+                  <li><a href="how-we-can-help">How We Can Help</a></li>
+                </ul>
+              </div>
+              <div class="column-2">
+                <h4>Psychics</h4>
+                <hr>
+                <ul>
+                  <li><a href="all-psychics">All Psychics</a></li>
+                  <li><a href="reading-topics">Reading Topics</a></li>
+                  <li><a href="psychic-abilities">Psychic Abilities</a></li>
+                </ul>
+              </div>
+              <div class="column-2">
+                <h4>Features</h4>
+                <hr>
+                <ul>
+                  <li><a href="horoscopes">Horoscopes</a></li>
+                  <li><a href="blog">Blog</a></li>
+                  <li><a href="rewards">Rewards</a></li>
+                </ul>
+              </div>
+              <div class="column-2">
+                <h4>Support</h4>
+                <hr>
+                <ul>
+                  <li><a href="pricing">Pricing</a></li>
+                  <li><a href="how-it-works">How It Works</a></li>
+                  <li><a href="contact-us">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="soc-app">
+              <ul>
+                <li class="social-media">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                </li>
+                <li>
+                  <hr>
+                </li>
+                <li class="app-store">
+                  <h5>Get The Michigan Psychics Network Mobile App</h5>
+                  <div class="apps">
+                    <a href="#">
+                      <img src="images/download-on-the-app-store.png" alt="Download on the App Store" width="136px">
+                    </a>
+                    <a href="#">
+                      <img src="images/google-play-badge.png" alt="Get it on Google Play" width="136px">
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>  
+        </div>  
+      </div>
+    </footer>
+    <div class="footer">
+      <div class="footer-content">
+        <p>©2022-2023 Michigan Psychics Network, Inc. All Rights Reserved. For entertainment purposes only. Must be 18 years or older.</p> 
+        
+      </div>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <hr width="1" size="16"/>
+        <li><a href="#">Terms of Use</a></li>
+        <hr width="1" size="16"/>
+        <li><a href="#">Site Map</a></li>
+        <hr width="1" size="16"/>
+        <li><a href="#">Do Not Sell My Personal Information</a></li>
+      </ul>
+    </div>
+     
+  </div>
+  <script src ="app.js">
+
+  
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+</body>
+</html>
