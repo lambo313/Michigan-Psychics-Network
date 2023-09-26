@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+  width: 100%;
+  height: 100vh;
+   background: radial-gradient(#212968, #010103);   filter: grayscale(20%);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   position: relative;
+   overflow-y: auto;
+}
+.backdrop{
+  z-index: 1;
+  }
+.logo {
+  position: center;
+  cursor: pointer;
+}
+.navbar{
+  width: 100%;
+  height: 15%;
+  margin: auto;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 10px 25px;
+  background: transparent;
+  outline: none;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul{
+  display: inline-block;
+  list-style: none;
+  margin-top: 40px;
+}
+nav li{
+  color: rgb(119, 217, 230);
+  padding: 10px 25px;
+  background-color: #212968;
+  border: 3px solid rgb(119, 217, 230);
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  list-style: none;
+}
+nav ul li{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(119, 217, 230);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.psychics-dropdown, .horoscopes-dropdown, .blog-dropdown, .about-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn1, .dropbtn2, .dropbtn3, .dropbtn4 {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(119, 217, 230);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .psychics-dropdown:hover, .horoscopes-dropdown:hover, .blog-dropdown:hover, .about-dropdown:hover, .dropbtn1:focus, .dropbtn2:focus, .dropbtn3:focus, .dropbtn4:focus, .getstartedbtn:hover {
+  outline: 4px solid rgb(119, 217, 230);
+  border-radius: 20px;
+  font-weight:700
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: transparent;
+  padding: 10px 25px;
+  background-color: #010103;
+  border: 3px solid rgb(119, 217, 230);
+  border-radius: 20px;
+  outline: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(119, 217, 230);
+  background-color: #212968;
+  border: 3px solid rgb(119, 217, 230);
+  border-radius: 20px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 0px;
+  background-color: none; 
+  border: 4px solid rgb(119, 217, 230);
+  border-radius: 20px;
+  outline: none;
+}
+/* Global Styles */
+
+body {
+  min-height: 100%;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+	padding: 0;
+	overflow: hidden;
+	--sz: 5px; /*** size ***/
+	--sp: .5s; /*** speed ***/
+	--b1: #3c3532;
+	--b2: #1c1b18;
+	--b3: #0c0b0a;
+	--b4: #0c0b0ae0;
+	--c1: #e399ff;
+	--ts: 50%/calc(var(--sz) * 17.5) calc(var(--sz) * 29.5);
+}
+.navbar a:hover, .logo:hover, .getstartedbtn:hover {
+		/* bg */
+	animation: colors var(--sp) linear 0s infinite;
+}
+
+@keyframes colors {
+	100% { filter: hue-rotate(360deg); }
+}
+
+.ban-1 {
+  margin: 20px;
+  border: 4px solid rgb(119, 217, 230);
+  border-radius: 20px;
+  outline: none;
+  position:absolute center
+}
+
+.col-1 {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.col-1 h1 {
+  position: absolute;
+  margin-top: 20px;
+  text-align: center;
+  z-index: 0;
+}
+
+.bg-image1{
+
+  background-repeat: repeat-x;
+  justify-content: center;
+  position: relative;
+  margin: 20px;
+  border: 3px solid rgb(119, 217, 230);
+  border-radius: 0px;
+  outline: none;
+  display: flex;
+  z-index: -1;
+}
+
+.getstartedbtn {
+  cursor: pointer;
+  position: absolute;
+  font-size: 24px;
+  bottom: 40px;
+  color: rgb(119, 217, 230);
+  padding: 20px 67px;
+  background: transparent;
+  border: 3px solid rgb(119, 217, 230);
+  border-radius: 20px;
+  z-index: 4;
+}
+
+.getstartedbtn-bkgrd {
+  cursor: pointer;
+  font-size: 24px;
+  bottom: 40px;
+  position: absolute;
+  padding: 20px 67px;
+  background: #212968;
+  border-radius: 20px;
+  z-index: 3;
+}
